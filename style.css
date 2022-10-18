@@ -28,7 +28,12 @@ section {
   min-height: 0.1vh;
   padding: 5rem;
 }
-
+.discord{
+  transition: 0.3s;
+}
+.discord:hover{
+  background-color: #738ADB;
+}
 .hidden {
   opacity: 0;
   filter: blur(5px);
