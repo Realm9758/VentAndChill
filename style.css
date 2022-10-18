@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #6b7280;
+  --light: #eee;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#2b1055, #7597de);
+}
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 0.1vh;
+  padding: 5rem;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px, 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  color: #ffff;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  color: #2b1055;
+  background: white;
+  text-decoration: none;
+}
+
+.row {
+  color: #fff;
+  font-size: 2rem;
+  margin: auto;
+  width: 50%;
+  letter-spacing: 4px;
+  margin-top: 10rem;
+  padding: 5px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card {
+  background: var(--purple);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  padding: 25px;
+  font-weight: 500;
+  font-size: large;
+  box-shadow: 5px 5px 2px;
+}
+.row:hover {
+  text-shadow: black 4px 2px;
+}
+
+.typewrite {
+	font-family: "Anonymous Pro", sans-serif;
+	line-height: 0.75;
+  color: var(--pink);
+  text-decoration: none;
+}
+
+
+
+.hover{
+  background: var(--purple);
+  padding: 5px;
+  transition: all 0.3s;
+
+}
+
+.hover:hover{
+  background: var(--pink);
+  padding: 10px;
+  margin-left: 10px;
+}
