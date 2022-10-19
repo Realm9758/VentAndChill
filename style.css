@@ -119,9 +119,8 @@ header ul li a.active {
 }
 
 .card:hover {
-  padding: 25px;
+
   font-weight: 500;
-  font-size: large;
   box-shadow: 5px 5px 2px;
 }
 .row:hover {
