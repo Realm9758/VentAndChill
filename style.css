@@ -134,8 +134,6 @@ header ul li a.active {
   text-decoration: none;
 }
 
-
-
 .hover{
   background: var(--purple);
   padding: 5px;
