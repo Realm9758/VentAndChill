@@ -21,6 +21,9 @@ body {
   min-height: 100vh;
   background: linear-gradient(#2b1055, #7597de);
 }
+.center_aligned {
+  text-align: center;
+}
 section {
   display: grid;
   place-items: center;
@@ -28,11 +31,11 @@ section {
   min-height: 0.1vh;
   padding: 5rem;
 }
-.discord{
+.discord {
   transition: 0.3s;
 }
-.discord:hover{
-  background-color: #738ADB;
+.discord:hover {
+  background-color: #738adb;
 }
 .hidden {
   opacity: 0;
@@ -90,14 +93,12 @@ header ul li a {
   padding: 6px 15px;
   border-radius: 20px;
 }
-
 header ul li a:hover,
 header ul li a.active {
   color: #2b1055;
   background: white;
   text-decoration: none;
 }
-
 .row {
   color: #fff;
   font-size: 2rem;
@@ -117,42 +118,40 @@ header ul li a.active {
   margin-bottom: 10px;
   transition: 0.3s;
 }
-
 .card:hover {
-
   font-weight: 500;
   box-shadow: 5px 5px 2px;
 }
 .row:hover {
   text-shadow: black 4px 2px;
 }
-
 .typewrite {
-	font-family: "Anonymous Pro", sans-serif;
-	line-height: 0.75;
+  font-family: "Anonymous Pro", sans-serif;
+  line-height: 0.75;
   color: var(--pink);
   text-decoration: none;
 }
-
-.hover{
+.hover {
   background: var(--purple);
   padding: 5px;
   transition: all 0.3s;
-
 }
-
-.hover:hover{
+.hover:hover {
   background: var(--pink);
   padding: 10px;
   margin-left: 10px;
 }
-
-@media only screen and (max-width: 500px){
-  .row{
+@media only screen and (max-width: 500px) {
+  .row {
     text-align: center;
     font-size: 1rem;
   }
-  .typewrite{
+  .typewrite {
     font-size: 1rem;
   }
+}
+.vt {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
 }
